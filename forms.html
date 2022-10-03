@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://google.com/" method="post">
+        <label for="input_name">First name : </label>
+        <input  name="input_first_name" id="input_first_name" onkeydown="return /[a-z]/i.test(event.key)" type="text" placeholder="Type your first name here ....">
+        <br><br>
+        <label for="input_last_name" placeholder="Type your first name here ....">Last name : </label>
+        <input name="last_name" id="input_last_name" type="text">
+        <br><br>
+        <label for="input_sec_number" placeholder="Type your first name here ....">Socila Security Number: </label>
+        <input  id="input_sec_number" type="number" min="0">
+        <br><br>
+  
+        <label for="input_phone_number" placeholder="Type your first name here ....">Phone number: </label>
+        <input  id="input_phone_number" type="tel">
+        <br><br>
+
+        <label for="input_email" placeholder="Type your first name here ....">Email: </label>
+        <input  id="input_email" type="email" >
+        <br><br>
+        <label for="input_email" placeholder="Type your first name here ....">Date of birth: </label>
+        <input  id="input_email" type="datetime-local" >
+        <br><br>
+        <label for="input_why"> Why you are filling this form</label>
+        <textarea rows="6" cols="150"  id="input_why" type="text" placeholder="WHy... ?"></textarea>
+        <br><br>
+        <label for="input_select">What is your profession ?</label>
+        <select name="input_profession"  id="input_select">
+            <option value="std">Student</option>
+            <option value="tch">Teacher</option>
+            
+        </select>
+        <br>
+        <label >What is your profession ?</label>
+        <input type="radio" name="input_profession" id="input_profession_student" > <label for="input_profession_student">Student</label>
+        <input type="radio" name="input_profession"   id="input_profession_teacher" > <label for="input_profession_teacher">Teacher</label>
+        <br>
+        <label>What fruit do you prefer ?</label>
+        <input type="checkbox" id="fruit_apple"> <label for="fruit_apple">Apple</label>  
+        <input type="checkbox" id="fruit_banana"> <label for="fruit_banana">Banana</label>  
+        <input type="checkbox" id="fruit_kiwi"> <label for="fruit_kiwi">Kiwi</label>  
+        <br>
+        <input type="submit">
+
+    </form>
+
+</body>
+</html>
